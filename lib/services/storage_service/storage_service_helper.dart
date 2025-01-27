@@ -17,6 +17,7 @@ class StorageServiceHelper {
     var box = getBox(boxName);
     return box.get(key) as T?;
   }
+  
 
   /// Delete data from a specific box
   static Future<void> deleteData({required String boxName, required String key}) async {
