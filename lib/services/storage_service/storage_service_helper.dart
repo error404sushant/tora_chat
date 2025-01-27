@@ -12,6 +12,7 @@ class StorageServiceHelper {
     await box.put(key, value);
   }
 
+  
   /// Retrieve data from a specific box
   static T? getData<T>({required String boxName, required String key}) {
     var box = getBox(boxName);
